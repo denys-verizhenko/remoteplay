@@ -15,7 +15,7 @@
     <dependencies>
         <dependency>
             <groupId>rp</groupId>
-            <artifactId>utils</artifactId>
+            <artifactId>dbo</artifactId>
         </dependency>
     </dependencies>
 

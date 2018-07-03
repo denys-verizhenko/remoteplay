@@ -10,7 +10,6 @@
 		<module>dto</module>
 		<module>dso</module>
 		<module>dbo</module>
-		<module>utils</module>
 		<module>persistence</module>
 		<module>services</module>
 		<module>web</module>
@@ -44,12 +43,6 @@
 			<dependency>
 				<groupId>rp</groupId>
 				<artifactId>dbo</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
-
-			<dependency>
-				<groupId>rp</groupId>
-				<artifactId>utils</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 

@@ -15,6 +15,11 @@
     <dependencies>
         <dependency>
             <groupId>rp</groupId>
+            <artifactId>dso</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rp</groupId>
             <artifactId>persistence</artifactId>
         </dependency>
     </dependencies>

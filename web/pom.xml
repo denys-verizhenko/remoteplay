@@ -15,6 +15,11 @@
     <dependencies>
         <dependency>
             <groupId>rp</groupId>
+            <artifactId>dto</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>rp</groupId>
             <artifactId>services</artifactId>
         </dependency>
 
