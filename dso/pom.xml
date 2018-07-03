@@ -9,14 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>persistence</artifactId>
+    <artifactId>dso</artifactId>
     <packaging>jar</packaging>
-    
-    <dependencies>
-        <dependency>
-            <groupId>rp</groupId>
-            <artifactId>utils</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

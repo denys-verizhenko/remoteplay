@@ -7,9 +7,12 @@
 	<artifactId>remoteplay</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
-		<module>domain</module>
+		<module>dto</module>
+		<module>dso</module>
+		<module>dbo</module>
+		<module>utils</module>
 		<module>persistence</module>
-		<module>service</module>
+		<module>services</module>
 		<module>web</module>
 	</modules>
 	<packaging>pom</packaging>
@@ -23,5 +26,51 @@
 		<version>2.0.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>rp</groupId>
+				<artifactId>dto</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>rp</groupId>
+				<artifactId>dso</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>rp</groupId>
+				<artifactId>dbo</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>rp</groupId>
+				<artifactId>utils</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>rp</groupId>
+				<artifactId>persistence</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>rp</groupId>
+				<artifactId>services</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>rp</groupId>
+				<artifactId>web</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>
