@@ -1,4 +1,4 @@
-package rp.converters;
+package rp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
@@ -9,16 +9,15 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class AutoregisterFormatterRegistrar implements FormatterRegistrar {
-
+public class ConverterFormatterRegistrar implements FormatterRegistrar {
     @Autowired(required = false)
-    @AutoRegistered
-    private List<Converter<?, ?>> autoRegisteredConverters;
+    @rp.annotations.Converter
+    private List<Converter> converters;
 
     @Override
     public void registerFormatters(FormatterRegistry formatterRegistry) {
-        if (this.autoRegisteredConverters != null) {
-            for (Converter<?, ?> converter : this.autoRegisteredConverters) {
+        if (this.converters != null) {
+            for (Converter converter : this.converters) {
                 formatterRegistry.addConverter(converter);
             }
         }
