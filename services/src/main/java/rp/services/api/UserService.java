@@ -5,7 +5,7 @@ import rp.models.User;
 
 import java.util.List;
 
-public interface UsersService {
+public interface UserService {
 
     List<User> getUsers();
 }

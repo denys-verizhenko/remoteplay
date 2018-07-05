@@ -1,14 +1,14 @@
 package rp.dao.impl;
 
 import org.springframework.stereotype.Repository;
-import rp.dao.api.UsersDAO;
+import rp.dao.api.UserDAO;
 import rp.models.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class UsersDAOImpl implements UsersDAO {
+public class UserDAOImpl implements UserDAO {
 
     private static List<User> users = new ArrayList<>();
 

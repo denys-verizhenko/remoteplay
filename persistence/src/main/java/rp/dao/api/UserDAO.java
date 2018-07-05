@@ -5,7 +5,7 @@ import rp.models.User;
 
 import java.util.List;
 
-public interface UsersDAO {
+public interface UserDAO {
 
     List<User> getAllUsers();
 }
